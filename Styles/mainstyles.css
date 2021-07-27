@@ -290,6 +290,9 @@ bold{
         animation-timing-function: linear;
         background-repeat: repeat;
       }
+      .mobile{
+          display: none;
+      }
 
 /* mobile resizing*/
 

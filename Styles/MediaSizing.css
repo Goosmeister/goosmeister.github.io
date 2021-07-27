@@ -12,7 +12,7 @@
         align-content: center;
         justify-content: center;
         align-items: center;
-        
+        position: fixed;
     }
     .mobile p, .mobile button{
         z-index: 100;
