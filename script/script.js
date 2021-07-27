@@ -38,3 +38,14 @@ function closeMenu() {
       cross2.classList.add("crossreverse2");
     }
        
+/*mobile message*/
+
+function mobileAlert() {
+  const but = document.getElementById("continue");
+  const mobileDiv = document.getElementById("mobile");
+  if(mobileDiv.style.display == "flex") {
+    mobileDiv.style.display = "none";
+  } else {
+  mobileDiv.style.display = "flex";
+}
+}
