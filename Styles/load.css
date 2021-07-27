@@ -13,32 +13,24 @@
 }
 .loader-container h1{
     padding: 20px;
-    animation: text 1s infinite alternate-reverse;
+    text-shadow: 0 0.5vw 0.2vw rgb(5, 7, 34);
+    z-index: 101;
+    position: fixed;
 }
 .loader{
-    width: 75px;
-    height: 75px;
-box-shadow:0 0 1vw rgb(79, 90, 253), inset 0 0 1vw black, inset 0 0 0.5vw black, inset 1vw 0 0.5vw rgba(0, 0, 0, 0.479),inset 1vw 0 2vw blue, 10vw 0 1vw white;
+    width: 100px;
+    height: 100px;
+box-shadow:0 0 0.5vw rgb(0, 0, 0), 0 0 2vw rgba(2, 6, 70, 0.7), inset 1vw 0 0.8vw rgba(0, 0, 0, 0.700), 10vw 0 0.8vw white;
     border-radius: 50%;
     border-top-color: transparent;
     animation: loader 2s linear infinite;
     background-color: blue;
+   
 }
 
 @keyframes loader{
 
     to{
         transform: rotate(360deg);
-    }
-}
-
-@keyframes text {
-    from{
-        color: white;
-        transform:scale(100%);
-    }
-    to{
-        color: royalblue;
-        transform:scale(50%);
     }
 }
