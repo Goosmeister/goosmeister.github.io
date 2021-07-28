@@ -25,7 +25,8 @@ scroll-behavior: smooth;
     font-family: 'Roboto Slab', serif;
     text-rendering:optimizeLegibility;
     color: white;
-  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     
 }
 header {

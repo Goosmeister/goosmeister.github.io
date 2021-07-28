@@ -25,7 +25,6 @@ justify-content: center;
 }
 
 #welcome{
-    display: block;
     position: fixed;
     min-width: 100vw;
     min-height: 100vh;
@@ -36,13 +35,16 @@ justify-content: center;
     text-justify: center;
     animation: welcome 2s forwards;
     animation-delay: 500ms ;
+    padding: 25vh 0;
 }
 #welcome h1{
     font-size: 14vw;
-    color: rgb(48, 141, 228);
-    
+    color: rgb(249, 251, 253);
+    text-shadow:0 0 5px rgb(255, 255, 255);
     text-align: center ;
     text-justify: center;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: rgba(0, 118, 228, 0.849);
 }
 
 .loader-container{
