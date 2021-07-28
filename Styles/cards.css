@@ -28,7 +28,7 @@ overflow: hidden;
 }
 
 .wrap{
-  cursor: pointer;
+  cursor: default;
   transition: all 500ms ease-out;
   padding: 1vw;
   margin: 1vw;
@@ -53,6 +53,13 @@ overflow: hidden;
 }
 .flex-column{
   height:max-content;
+  cursor:default !important;
+  z-index: -100;
+}
+
+.projects a, .flex-column a{
+  cursor:default !important;
+  z-index: 100;
 }
 .card {
   align-self: center;
@@ -69,7 +76,9 @@ overflow: hidden;
   left: 0;
 }
 
-
+a{
+  z-index: 100;
+}
 /* images */
 
 #container--1{
@@ -193,7 +202,7 @@ overflow: hidden;
     margin: 1vw;
     animation: slide 10s alternate infinite;
     animation-timing-function: ease-in-out;
-    cursor: pointer;
+    cursor: default;
     transition: all 500ms ease-out;
     padding: 2%;
     position: relative;
@@ -230,6 +239,8 @@ overflow: hidden;
 
   .container:hover{
     transition: all 500ms ease-in-out;
+    cursor: pointer;
+
     }
 
   .wrap:hover {
@@ -237,7 +248,14 @@ overflow: hidden;
     background: rgb(0, 153, 255);
     box-shadow: 0 0 0.2vw black;
     transition: all 500ms ease-in-out;
+    animation: 150ms shake alternate linear;
+    animation-iteration-count: 1;
   }
+
+.port:hover{
+  animation: 150ms shake alternate linear;
+  animation-iteration-count: 1;
+}
 
   @keyframes slide {
     from{transform:translateX(-0.1rem);}
@@ -252,5 +270,11 @@ overflow: hidden;
   #right {
     animation: slide 1s alternate-reverse infinite;
     animation-timing-function: ease-in-out;
+  }
+
+  @keyframes shake {
+    0%{transform:translateX(-2px);}
+    25%{transform: translateX(2px);}
+    50%{transform:translateX(-2px);}
   }
 }

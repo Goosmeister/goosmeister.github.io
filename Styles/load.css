@@ -24,7 +24,9 @@ justify-content: center;
     transition:1s ease;
 }
 
+
 #welcome{
+    pointer-events: none;
     position: fixed;
     min-width: 100vw;
     min-height: 100vh;
