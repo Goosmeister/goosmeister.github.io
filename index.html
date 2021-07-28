@@ -44,11 +44,16 @@
   
 </div>
 
+<div id="welcome"><h1>Welcome</h1></div>
+
 <script>
 var loader = document.getElementById("preloader");
-
+var welcome = document.getElementById("welcome");
 window.addEventListener("load", function(){
   loader.style.display = "none"
+if(loader.style.display == "none"){
+  welcome.style.display = "block"
+}
 })
 </script>
 
