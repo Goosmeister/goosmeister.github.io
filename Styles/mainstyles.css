@@ -156,9 +156,10 @@ bold{
     font-size: 4vw;
     position:relative;
     background: transparent;
-    color: transparent;
-    -webkit-text-stroke-width: 0.1vw;
-    -webkit-text-stroke-color: white;
+    background: transparent;
+    color: rgba(0, 174, 255, 0.7);
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 .header_are {
     font-style: normal;
@@ -166,25 +167,30 @@ bold{
     position:relative;
     background: transparent;
     color: transparent;
+    background: transparent;
+    color: rgba(0, 174, 255, 0.7);
     -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 .header_portofolio {
     font-style: italic;
     font-size: 6vw;
     position:relative;
-    background: transparent;
-    color: rgb(253, 253, 253);
     top: -0.8em;
-    -webkit-text-stroke-width: 0.05vw;
-    -webkit-text-stroke-color: rgb(134, 134, 134);
+    background: transparent;
+    color: rgba(0, 174, 255, 0.7);
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 .header_my {
     font-style: normal;
     font-size: 4vw;
     position:relative;
-    background: transparent;
     top: -1.5em;
+    background: transparent;
+    color: rgba(0, 174, 255, 0.7);
+    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 
 .me {
@@ -195,12 +201,17 @@ bold{
     width: 37.5vw;
     align-self:center;
     z-index: 1;
+    text-shadow: -5px 0px 2px white;
 }
  .name{
     font-style: normal;
     font-size: 1.5vw;
     color: #8d99ae;
     background: transparent;
+    color: rgba(0, 174, 255, 0.7);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(195, 226, 255);
+    text-shadow: 0px 0px 1px white;
 }
 .projects {
     padding-top: 10%;
@@ -210,13 +221,22 @@ bold{
     width: 37.5vw;
     align-self:flex-end;
     transform: translate(40vw, 10vw);
+    text-shadow: 6px 0px 1px white;
+}
+
+.white-break h1{
+ mix-blend-mode: screen;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(195, 226, 255);
+    font-size: 5rem;
 }
 
 .white-break {
     width: 100%;
     padding: 4vw 0;
     box-sizing: border-box;
-    background-color: rgb(193, 215, 233);
+    background-color: rgba(0, 174, 255, 0.7);
     align-self: flex-start;
     margin: 1vw 0;
     z-index: 0;

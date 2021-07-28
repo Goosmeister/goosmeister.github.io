@@ -1,3 +1,24 @@
+.lil-planet{
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1.4vw 0 0.1vw rgb(255, 255, 255), 1.4vw 0 0.2vw blue, inset 4px 0 4px royalblue;
+    background: rgba(0, 174, 255, 0.7);
+position: fixed;
+top: 1.5vw;
+}
+
+#lil{
+    display: flex;
+float:left;
+align-items: center;
+justify-content: center;
+}
+
 .loader-container{
     width: 100%;
     height: 100vh;
