@@ -54,7 +54,7 @@ overflow: hidden;
 .flex-column{
   height:max-content;
   cursor:default !important;
-  z-index: -100;
+  z-index: 0;
 }
 
 .projects a, .flex-column a{
