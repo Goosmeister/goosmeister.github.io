@@ -28,6 +28,12 @@ justify-self: left;
     transition:1s ease;
 }
 
+#preloader h1{
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+}
+
 
 #welcome{
     pointer-events: none;
