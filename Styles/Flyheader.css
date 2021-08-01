@@ -58,7 +58,9 @@
   @keyframes fly-projects{
     0%{transform: translate(-100vw);}
     20%{transform: translate(-100vw);}
-    50%{transform: translate(30vw, 15vw);}
+    50%{transform: translate(30vw, 15vw);
+        color: transparent;}
+    75%{ color: white; }
     100%{transform: translate(30vw, 15vw);}
   }
 

@@ -120,6 +120,8 @@ article {
 }
 bold{
     color: rgb(0, 140, 255);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 140, 255);
 }
 
 .header_this, .header_these, .header_is, .header_are, .header_portofolio, .header_projects, .header_my, .header_my2, .name{
@@ -140,6 +142,7 @@ bold{
 .header_this {
     font-size: 14vw;
     left: 0;
+    color: white;
 }
 
 .header_these {
@@ -189,15 +192,14 @@ bold{
     width: 37.5vw;
     align-self:center;
     z-index: 1;
-  
     overflow:visible;
 
 }
  .name{
     position:absolute;
     font-style: normal;
-    font-size: 1.5vw;
-    color: #8d99ae;
+    font-size: 2rem;
+    color: transparent;
     background: transparent;
 
 }
