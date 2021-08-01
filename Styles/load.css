@@ -34,15 +34,15 @@ justify-self: left;
     position: fixed;
     min-width: 100vw;
     min-height: 100vh;
-    background-color: rgba(26, 50, 87, 0.9);
+    background-color: rgba(26, 50, 87);
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 2px;
     color: transparent;
     z-index: 100;
     text-align: center ;
     text-justify: center;
-    animation: welcome 2s forwards;
-    animation-delay: 500ms ;
+    animation: welcome 3s forwards;
+    animation-delay: 1s ;
     padding: 25vh 0;
 }
 #welcome h1{
@@ -51,7 +51,12 @@ justify-self: left;
     color: transparent;
     text-align: center ;
     text-justify: center;
- 
+ animation: slider 2s forwards;
+ animation-delay: 1s;
+}
+
+@keyframes slider {
+    to{transform: translate(0, -100vw);}
 }
 
 .loader-container{
