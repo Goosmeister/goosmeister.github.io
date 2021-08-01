@@ -60,7 +60,7 @@
     20%{transform: translate(-100vw);}
     50%{transform: translate(30vw, 15vw);
         color: transparent;}
-    75%{ color: white; }
+    75%{ color: rgb(212, 236, 255); }
     100%{transform: translate(30vw, 15vw);}
   }
 

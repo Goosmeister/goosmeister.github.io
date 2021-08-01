@@ -142,13 +142,17 @@ bold{
 .header_this {
     font-size: 14vw;
     left: 0;
-    color: white;
+    color: rgb(212, 236, 255);
+    -webkit-text-stroke-width: 6px;
+
 }
 
 .header_these {
     font-size: 14vw;
     background: transparent;
     left: -10%;
+    color: rgb(212, 236, 255);
+    -webkit-text-stroke-width: 6px;
 }
 
 .header_is {
