@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!-- mobile msg-->
-<div class="mobile" id="mobile" style="display: flex;">
+<div class="mobile" id="mobile">
   <p>This websight is intended to be viewed on a PC. The Mobile version is stil in developement.
     </p>
     <button id="continue" onclick="mobileAlert()">Continue?</button>
@@ -17,10 +17,10 @@
         <link rel="stylesheet" href="Styles/menustyles.css">
         <link rel="stylesheet" href="Styles/mainstyles.css">
         <link rel="stylesheet" href="Styles/Background-animation.css">
-        <link rel="stylesheet" href="Styles/stars.css">
         <link rel="stylesheet" href="Styles/cards.css">
         <link rel="stylesheet" href="Styles/MediaSizing.css">
         <link rel="stylesheet" href="Styles/burgerMenu.css">
+        <link rel="stylesheet" href="Styles/Flyheader.css">
        
         <script src="script/script.js"></script> 
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -46,16 +46,7 @@
 
 <div id="welcome" style="display: none;"><h1>Welcome</h1></div>
 
-<script>
-var loader = document.getElementById("preloader");
-var welcome = document.getElementById("welcome");
-window.addEventListener("load", function(){
-  loader.style.display = "none"
-if(loader.style.display == "none"){
-  welcome.style.display = "block"
-}
-})
-</script>
+<script src="script/loadScript.js"></script> 
 
     <header>
 
@@ -107,12 +98,10 @@ if(loader.style.display == "none"){
     <p>
     <em class="name">Hi, My Name Is <bold>Gustav Kotze</bold></em>
     <em class="header_this">This</em><em class="header_is">Is</em><br>
-    <em class="header_my">My</em><em class = "header_portofolio">Portofolio</em>
+    <em class="header_my">My</em><em class = "header_portofolio">Web Portofolio</em>
     </p>
 </article>
 </div>
-
-  <a type="button" href="https://goosmeister.github.io/gustavKotzePortofolio.github.io/" target="_blank" class="port">I have another portofolio in the works with a different style Here</a>
 
 
 <div class="breakWindow">
@@ -121,18 +110,38 @@ if(loader.style.display == "none"){
 
 <div class="fullscreen-div">
 <article class="projects">
-    <em class="header_this">These</em><em class="header_are">Are</em><br>
-    <em class="header_my">My</em><em class = "header_portofolio">Projects</em>
+    <em class="header_these">These</em><em class="header_are">Are</em><br>
+    <em class="header_my2">My</em><em class = "header_projects">Projects</em>
 </article>
 
 
 
 </div>
-<div class="breakWindow">
-<div class="white-break"><h1 id="projects">PROJECTS</h1></div>
+<div >
+
 </div>
 
 <!--cards-->
+
+<audio controls preload="auto" >
+
+	<source id="beep" src="audio/click.ogg" controls></source>
+	Your browser isn't invited for super fun audio time.
+</audio>
+
+<script>
+function addSource(elem, path) {
+  $('<source>').attr('src', path).appendTo(elem);
+}
+
+$("#beep").mouseenter(function(){
+     var audio = $('<audio />', {
+       autoPlay : 'autoplay'
+     });
+     addSource(audio, 'audio/'+Math.ceil(Math.random() * 5)+'.mp3');
+     audio.appendTo('body');     
+});
+</script>
 
 <article class="projects-slider__container">
 
@@ -224,7 +233,7 @@ if(loader.style.display == "none"){
 </article>
 <!---->
 
-<div class="breakWindow">
+
 <footer>
   <div class="footer-info" id="contacts">
     <p><span>Contact</span></p>
@@ -234,7 +243,7 @@ if(loader.style.display == "none"){
 <p>Hosted On GitHub Pages</p>
   </div>
 </footer>
-</div>
+
 
 </body>
 

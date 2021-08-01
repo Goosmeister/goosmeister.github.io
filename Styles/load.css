@@ -1,22 +1,26 @@
 .lil-planet{
-    height: 1vw;
-    width: 1vw;
+    height: 0.8vw;
+    width: 0.8vw;
     border-radius: 50%;
     animation: loader 2s linear infinite;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1.4vw 0 0.1vw rgb(255, 255, 255), 1.4vw 0 0.2vw blue, inset 4px 0 4px royalblue;
+    align-self: center;
+    justify-self: left;
+    box-shadow: 1vw 0 0.1vw rgb(255, 255, 255), 1vw 0 0.2vw blue, inset 4px 0 4px royalblue;
     background: rgba(0, 174, 255, 0.7);
 position: fixed;
-top: 1.5vw;
+top: 1vw;
+left: 1.5vw;
 }
 
 #lil{
     display: flex;
+    align-items: center;
+    
 float:left;
 align-items: center;
-justify-content: center;
+justify-content: left;
+justify-self: left;
 }
 
 
@@ -52,7 +56,7 @@ justify-content: center;
 .loader-container{
     width: 100%;
     height: 100vh;
-    background-color: rgb(5, 7, 34);
+    background-color: rgb(62, 131, 223);
     position: fixed;
     display: flex;
     align-items: center;
@@ -76,13 +80,16 @@ box-shadow:0 0 0.5vw rgb(0, 0, 0), 0 0 2vw rgba(2, 6, 70, 0.7), inset 1vw 0 0.8v
     border-radius: 50%;
     border-top-color: transparent;
     animation: loader 2s linear infinite;
-    background-color: blue;
+    background-color: rgb(128, 0, 248);
    
 }
 
 @keyframes loader{
-
+0%{background-color: rgb(4, 0, 248);}
+50%{background-color: rgb(0, 170, 248);}
+100%{background-color: rgb(4, 0, 248);}
     to{
+        
         transform: rotate(360deg);
     }
 }

@@ -1,0 +1,63 @@
+.name{
+    animation: fly 2s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -6s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
+
+  .header_this, .header_is{
+    animation: fly 5s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -5s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+  .header_portofolio, .header_my{
+    animation: fly 5s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -2s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+
+  .header_these, .header_are{
+    animation: fly-projects 2s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+  .header_projects, .header_my2{
+    animation: fly-projects 2s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -4s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+  @keyframes fly{
+    0%{transform: translate(1vw);}
+    20%{transform: translate(120vw);}
+    50%{transform: translate(0vw);}
+  }
+
+  @keyframes fly-projects{
+    0%{transform: translate(-100vw);}
+    20%{transform: translate(-100vw);}
+    50%{transform: translate(30vw, 15vw);}
+    100%{transform: translate(30vw, 15vw);}
+  }

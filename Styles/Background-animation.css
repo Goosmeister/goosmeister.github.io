@@ -44,15 +44,9 @@
 
 .circle-container {
   position:fixed;
-  z-index: -1;
-  
-  
+  z-index: -1;  
 }
 
-
-  
-
- 
 /* desktop animations*/
 
 @media screen and (min-width: 900px) {
@@ -77,6 +71,8 @@
   @keyframes planet-move {
     to{transform:translate(110vw);}
   }
+
+
 
   .circle-container {
     position:fixed;

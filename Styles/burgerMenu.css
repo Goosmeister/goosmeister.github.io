@@ -21,10 +21,18 @@ ul {
     overflow: hidden;
     position: fixed; 
     top: 0;
-    left: 0; 
+
     width: 100%;
-    background: white;
-    box-shadow: 0 0 0.2vw black;
+    background: rgba(0, 87, 250, 0.144);
+    box-shadow: 0 0 1vw rgb(0, 0, 0), 0 0 1.5vw rgb(0, 0, 0);
+    max-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: right;
+    min-width: 100vw;
     }
     
 .topnav a {
@@ -32,7 +40,13 @@ ul {
     flex: 1;
  color: white;
     text-align: center;
-    background-color: white;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 0 1vw;
+ float: right;
+ justify-self: flex-end;
+ right: 1.5vw;
+ padding-right: 4vw;
     }
   
 
@@ -40,14 +54,10 @@ ul {
 
 @media only screen and (min-width: 800px) {
   .topnav {
-height: 4vw;
+height: 3vw;
     }
 .topnav a {
-
-      float: left;
-      text-align: center;
-      justify-self: center;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: rgb(0, 140, 255);
     }
 
@@ -73,6 +83,10 @@ label {
   flex-wrap: wrap;
   background:rgb(46, 150, 235);
     }
+
+  .topnav{
+    font-size: 1rem;
+  }
 ul {
       padding-left: 0%;
       padding: 0%;
