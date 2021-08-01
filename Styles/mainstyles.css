@@ -8,6 +8,8 @@
 html,body{
 scroll-behavior: smooth;
     overflow-x: hidden;
+    background: linear-gradient(180deg,rgba(0,212,255,0)  0%,
+    rgba(46, 150, 235, 0.3) 75%, rgb(46, 150, 235) 90%);
     }
 
 
@@ -44,10 +46,7 @@ footer {
     width: 100vw;
     height: 75vh;
     padding: 4.375vw 3vw;
-  
     background: transparent;
-    background: linear-gradient(180deg,rgba(0,212,255,0)  0%,
-    rgb(46, 150, 235, 0.5) 25%, rgb(46, 150, 235) 75%);
     bottom:0;
    display: flex;
    flex-direction: column;
@@ -82,9 +81,10 @@ span{
     padding-left: 5vw;
     align-self: right;
     width: 10vw;
+    
 }
 .footer-info a:hover{
-    color: rgb(183, 229, 255);
+    color: rgb(0, 89, 255);
 }
 
 body {
@@ -116,105 +116,69 @@ article {
     background: transparent;
     align-self: center;
     position: relative;
+    
 }
 bold{
     color: rgb(0, 140, 255);
 }
-.header_this {
-    font-style:normal;
-position:absolute;
-    font-size: 14vw;
+
+.header_this, .header_these, .header_is, .header_are, .header_portofolio, .header_projects, .header_my, .header_my2, .name{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(212, 236, 255);
+    color: transparent;
     background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
     z-index: -1;
+    font-style:normal;
+    position:absolute;
+ 
+} 
+
+.header_this:hover, .header_these:hover{
+    color: white;
+}
+
+.header_this {
+    font-size: 14vw;
     left: 0;
 }
 
 .header_these {
-    font-style:normal;
-position:absolute;
     font-size: 14vw;
     background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
-    z-index: -1;
     left: -10%;
 }
 
 .header_is {
-    font-style: normal;
     font-size: 4vw;
-    position:absolute;
-    background: transparent;
-    background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
     left: 83%;
     top: 41%;
 }
 .header_are {
-    font-style: normal;
     font-size: 4vw;
-    position:absolute;
-    background: transparent;
-    color: transparent;
-    background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
     left: 97%;
     top: 21%;
 }
 .header_portofolio {
-    font-style: normal;
     font-size: 4vw;
-    position:absolute;
     top: 50%;
     left: 20%;
-    background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 
 .header_projects {
-    font-style: normal;
-  
     font-size: 6vw;
-    position:absolute;
     top: 28%;
     left: 28%;
-    background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 
 .header_my {
-    font-style: normal;
     font-size: 3vw;
-    position:absolute;
     top: 50%;
-    background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 
 .header_my2 {
-    font-style: normal;
     font-size: 4vw;
-    position:absolute;
     top:30%;
     left: 10%;
-    background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.2vw;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
 }
 
 .me {
@@ -225,7 +189,7 @@ position:absolute;
     width: 37.5vw;
     align-self:center;
     z-index: 1;
-    text-shadow: -5px 0px 2px white;
+  
     overflow:visible;
 
 }
@@ -235,38 +199,33 @@ position:absolute;
     font-size: 1.5vw;
     color: #8d99ae;
     background: transparent;
-    color: rgba(0, 174, 255, 0.7);
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: rgb(195, 226, 255);
-    text-shadow: 0px 0px 1px white;
+
 }
 .projects {
-
     width: 37.5vw;
     align-self:center;
     height: 50vw;
-    text-shadow: 6px 0px 1px white;
 }
 
-
 .window-back {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     padding: 4vw 0;
+    margin-bottom: 2vw;
     box-sizing: border-box;
-    box-shadow: 0 0 0.5vw black ;
+    box-shadow: 0 0 10px black;
     background: linear-gradient(left rgba(54, 54, 54, 0.1), rgba(112, 112, 112, 0.2));
     align-self: flex-start;
     z-index: 1;
 }
+
 .fullscreen-div {
     height: auto;
-    width: 98%;
-
-    margin: 0.5vw;
-    margin-left: 0.5vw;
+    width: 100vw;
+    padding: 0.5vw;
+    padding-left: 0.5vw;
+    margin-bottom: 2vw;
     z-index: 0;
-    background: linear-gradient(left rgba(54, 54, 54, 0.1), rgba(112, 112, 112, 0.2));
     align-self: flex-start;
     display:flex;
 }

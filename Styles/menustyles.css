@@ -5,6 +5,7 @@ li, a{
     color: white;
     text-decoration: none;
     z-index: 1;
+    text-shadow: 0 0 1px black;
 }
 nav {
     top: 0;
@@ -14,6 +15,16 @@ z-index: 1;
     float: right !important;
 }
 
+
+@keyframes slide {
+    from{transform:translateX(-0.3rem);}
+    to{transform: translateX(0.3rem);}
+    }
+    
+.menu-links {
+      animation: slide 1s alternate infinite;
+      animation-timing-function: ease-in-out;
+    }
 
 .logo {
     cursor: pointer;
@@ -40,9 +51,8 @@ float: right !important;
 
 .nav__links li a:hover {
     transition: all 500ms ease-in-out;  
-    color: rgb(0, 64, 109);
+    color: rgb(0, 149, 255);
     
-    border-bottom:  0.1vw solid rgb(0, 140, 255);
 }
 
 
@@ -59,11 +69,11 @@ float: right !important;
     display: block;
     width: 0;
     height: 0vw;
-    background: rgb(0, 30, 70);
+    background: rgb(0, 0, 0);
     transition: width .3s;
 }
 
 .menu-links:hover::after {
-    width: 100%;
+    width: 5%;
     
 }

@@ -19,6 +19,7 @@
 overflow: hidden;
   background: linear-gradient(left rgba(54, 54, 54, 0.1), rgba(112, 112, 112, 0.2));
   height: auto;
+
 }
 
 .main a, .project-a, #right, #left{
@@ -63,8 +64,8 @@ overflow: hidden;
 .card {
   align-self: center;
   float: left;
-  color: black;
-  background: white;
+  color: black !important;
+  background: rgba(255, 255, 255, 0.397);
   height: 20vw;
   width: 100%;
   text-align: center;
@@ -73,6 +74,11 @@ overflow: hidden;
   font-size: 5vw;
   position:absolute;
   left: 0;
+
+} 
+
+.card p{
+  color: #000;
 }
 
 a{
@@ -165,7 +171,7 @@ a{
 }
 
 .main {
-  box-shadow: inset 0 0 0 black ;
+  box-shadow: inset 0 0 1px black ;
   }
 }
 
@@ -207,8 +213,8 @@ a{
     position: relative;
     display: flex;
     background: rgba(0, 35, 63, 0.4);
-
-    box-shadow: 0 0 1vw black, inset 0 0 0.5vw white;
+border-radius: 5px;
+    box-shadow: 0 0 1vw black, inset 0 0 5px white;
   }
   #card1 {
     align-self: flex-start;

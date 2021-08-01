@@ -23,8 +23,8 @@ ul {
     top: 0;
 
     width: 100%;
-    background: rgba(0, 87, 250, 0.144);
-    box-shadow: 0 0 1vw rgb(0, 0, 0), 0 0 1.5vw rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.100);
+
     max-height: 10vh;
     display: flex;
     flex-direction: row;
@@ -39,6 +39,7 @@ ul {
     display: flex;
     flex: 1;
  color: white;
+
     text-align: center;
     background-color: transparent;
     font-size: 1rem;
