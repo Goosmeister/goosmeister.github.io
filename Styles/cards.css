@@ -8,6 +8,8 @@
   align-self: center;
 }
 
+
+
 .main {
   flex-direction: column;
   display: flex;
@@ -28,6 +30,7 @@ overflow: hidden;
 }
 
 .wrap{
+  border: 1px solid white;
   cursor: default;
   transition: all 500ms ease-out;
   padding: 1vw;
@@ -65,8 +68,8 @@ overflow: hidden;
   align-self: center;
   float: left;
   color: black !important;
-  background: rgba(255, 255, 255, 0.397);
-  height: 20vw;
+  background: rgba(255, 255, 255, 0.8);
+  max-height: 10vw;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -182,7 +185,7 @@ a{
     box-shadow: 0 0 0.2vw black;
     position: relative;
     align-self:flex-end;
-    height: 10rem;
+    height: 10vh;
     margin-bottom: 2rem;
     margin: 0;
     width: 100%;
@@ -209,29 +212,31 @@ a{
     animation-timing-function: ease-in-out;
     cursor: default;
     transition: all 500ms ease-out;
-    padding: 2%;
+
     position: relative;
     display: flex;
-    background: rgba(0, 35, 63, 0.4);
-border-radius: 5px;
-    box-shadow: 0 0 1vw black, inset 0 0 5px white;
+    background: rgba(0, 35, 63, 0.1);
+border-radius: 2px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.295);
+    padding: 2%;
+    
   }
   #card1 {
     align-self: flex-start;
-    top: 22vw;
+    top: 11vw;
   }
   #card2 {
     align-self:center;
-    top: 10vw;
+    top: 5vw;
   }
   #card3 {
     align-self: center;
-    top: 10vw;
+    top: 6vw;
   }
 
   .container {
     width: 17vw;
-    height: 23vw;
+    height: 10vw;
     align-items: center;
     flex-direction: row;
     padding: 0;

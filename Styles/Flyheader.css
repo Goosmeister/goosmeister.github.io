@@ -61,3 +61,13 @@
     50%{transform: translate(30vw, 15vw);}
     100%{transform: translate(30vw, 15vw);}
   }
+
+  .projects-slider__container{
+    animation: fly 4s linear infinite ;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    transition: all 1s ease-in-out;
+}
