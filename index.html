@@ -123,26 +123,6 @@
 
 <!--cards-->
 
-<audio controls preload="auto" >
-
-	<source id="beep" src="audio/click.ogg" controls></source>
-	Your browser isn't invited for super fun audio time.
-</audio>
-
-<script>
-function addSource(elem, path) {
-  $('<source>').attr('src', path).appendTo(elem);
-}
-
-$("#beep").mouseenter(function(){
-     var audio = $('<audio />', {
-       autoPlay : 'autoplay'
-     });
-     addSource(audio, 'audio/'+Math.ceil(Math.random() * 5)+'.mp3');
-     audio.appendTo('body');     
-});
-</script>
-
 <article class="projects-slider__container">
 
   
